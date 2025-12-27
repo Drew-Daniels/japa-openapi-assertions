@@ -1,5 +1,5 @@
 {
-  "name": "@drew-daniels/japa-openapi-assertions",
+  "name": "japa-openapi-assertions",
   "version": "0.1.0",
   "description": "OpenAPI 3.1 Assertions plugin for Japa (fork of @japa/openapi-assertions)",
   "type": "module",
