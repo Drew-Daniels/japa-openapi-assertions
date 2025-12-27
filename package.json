@@ -1,0 +1,60 @@
+{
+  "name": "@drew-daniels/japa-openapi-assertions",
+  "version": "0.1.0",
+  "description": "OpenAPI 3.1 Assertions plugin for Japa (fork of @japa/openapi-assertions)",
+  "type": "module",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./build/index.js",
+      "types": "./build/index.d.ts"
+    }
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "files": [
+    "build",
+    "!build/tests"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "node --import tsx --test tests/**/*.spec.ts"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "@seriousme/openapi-schema-validator": "^2.7.0",
+    "chalk": "^5.4.1"
+  },
+  "peerDependencies": {
+    "@japa/assert": "^4.0.0",
+    "@japa/runner": "^3.0.0 || ^4.0.0 || ^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "tsx": "^4.19.0",
+    "typescript": "~5.8"
+  },
+  "keywords": [
+    "openapi",
+    "openapi-3.1",
+    "japa",
+    "assert",
+    "api-testing",
+    "json-schema"
+  ],
+  "author": "Drew Daniels",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drew-daniels/japa-openapi-assertions"
+  },
+  "homepage": "https://github.com/drew-daniels/japa-openapi-assertions#readme",
+  "bugs": {
+    "url": "https://github.com/drew-daniels/japa-openapi-assertions/issues"
+  }
+}
